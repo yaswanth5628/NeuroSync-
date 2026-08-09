@@ -151,50 +151,7 @@ npm
 Git
 GitHub
 Visual Studio Code
-📂 Project Structure
-NeuroSync/
-│
-├── base44/
-│   ├── entities/
-│   └── config.jsonc
-│
-├── src/
-│   │
-│   ├── api/
-│   │   └── base44Client.js
-│   │
-│   ├── components/
-│   │   ├── auth/
-│   │   ├── dashboard/
-│   │   ├── layout/
-│   │   ├── medical/
-│   │   ├── profile/
-│   │   ├── skinscan/
-│   │   └── ui/
-│   │
-│   ├── lib/
-│   │
-│   ├── pages/
-│   │
-│   ├── utils/
-│   │
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-│
-├── .gitignore
-├── components.json
-├── eslint.config.js
-├── index.html
-├── jsconfig.json
-├── package.json
-├── package-lock.json
-├── postcss.config.js
-├── tailwind.config.js
-├── vite.config.js
-└── README.md
 
-The actual files and folders may vary as the project continues to evolve.
 
 🚀 Getting Started
 Prerequisites
