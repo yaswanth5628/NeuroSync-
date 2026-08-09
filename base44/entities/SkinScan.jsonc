@@ -1,0 +1,122 @@
+{
+  "name": "SkinScan",
+  "type": "object",
+  "properties": {
+    "image_url": {
+      "type": "string"
+    },
+    "condition_name": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "mild",
+        "moderate",
+        "urgent"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "symptoms": {
+      "type": "string"
+    },
+    "causes": {
+      "type": "string"
+    },
+    "precautions": {
+      "type": "string"
+    },
+    "self_care": {
+      "type": "string"
+    },
+    "when_to_see_doctor": {
+      "type": "string"
+    },
+    "warning_signs": {
+      "type": "string"
+    },
+    "treatment_note": {
+      "type": "string"
+    },
+    "full_analysis": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "lesion_category": {
+      "type": "string",
+      "description": "User-selected lesion category for the guided assessment"
+    },
+    "questionnaire": {
+      "type": "string",
+      "description": "JSON string of the guided assessment questionnaire responses"
+    },
+    "clinical_reasoning": {
+      "type": "string"
+    },
+    "differential_diagnoses": {
+      "type": "string"
+    },
+    "otc_recommendations": {
+      "type": "string"
+    },
+    "red_flag_symptoms": {
+      "type": "string"
+    },
+    "dermatologist_recommended": {
+      "type": "boolean"
+    },
+    "estimated_urgency": {
+      "type": "string",
+      "enum": [
+        "routine",
+        "soon",
+        "urgent"
+      ]
+    },
+    "prevention_advice": {
+      "type": "string"
+    },
+    "report_id": {
+      "type": "string",
+      "description": "Permanent public report identifier, format NS-YYYYMMDD-XXXXXXXX"
+    },
+    "report_status": {
+      "type": "string",
+      "default": "completed"
+    },
+    "timezone": {
+      "type": "string",
+      "default": "Asia/Kolkata"
+    },
+    "app_version": {
+      "type": "string"
+    },
+    "ai_model_version": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "image_url"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

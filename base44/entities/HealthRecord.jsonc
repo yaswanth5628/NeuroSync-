@@ -1,0 +1,74 @@
+{
+  "name": "HealthRecord",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "heart_rate": {
+      "type": "number",
+      "description": "BPM"
+    },
+    "spo2": {
+      "type": "number",
+      "description": "Blood oxygen saturation percentage"
+    },
+    "sleep_hours": {
+      "type": "number"
+    },
+    "sleep_quality": {
+      "type": "string",
+      "enum": [
+        "poor",
+        "fair",
+        "good",
+        "excellent"
+      ]
+    },
+    "steps": {
+      "type": "number"
+    },
+    "calories_burned": {
+      "type": "number"
+    },
+    "active_minutes": {
+      "type": "number"
+    },
+    "mood": {
+      "type": "string",
+      "enum": [
+        "great",
+        "good",
+        "okay",
+        "low",
+        "bad"
+      ]
+    },
+    "water_intake": {
+      "type": "number",
+      "description": "Glasses of water"
+    },
+    "weight": {
+      "type": "number",
+      "description": "Weight in kg"
+    }
+  },
+  "required": [
+    "date"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}

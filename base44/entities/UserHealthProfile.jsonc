@@ -1,0 +1,57 @@
+{
+  "name": "UserHealthProfile",
+  "type": "object",
+  "properties": {
+    "age": {
+      "type": "number"
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    "blood_group": {
+      "type": "string"
+    },
+    "allergies": {
+      "type": "string"
+    },
+    "existing_skin_conditions": {
+      "type": "string"
+    },
+    "medical_history": {
+      "type": "string"
+    },
+    "skin_type": {
+      "type": "string",
+      "enum": [
+        "oily",
+        "dry",
+        "combination",
+        "sensitive",
+        "normal"
+      ]
+    },
+    "medications": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}
